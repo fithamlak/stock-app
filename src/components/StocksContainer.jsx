@@ -1,14 +1,25 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchStocks } from '../redux/stocks/stocksSlice';
 import Stock from './Stock';
 
 const StocksContainer = () => {
-  const stocks = [{ companyName: 'Toyota' }, { companyName: 'Microsoft' }];
+  const dispatch = useDispatch();
+  const ifSucceed = useSelector((store) => store.stocks.ifSucceed);
+  const stocksArray = useSelector((store) => store.stocks.stocksArray);
+
+  useEffect(() => {
+    if (stocksArray.length === 0) {
+      dispatch(fetchStocks());
+    }
+  }, [dispatch, ifSucceed, stocksArray]);
 
   return (
     <>
       <h4>List of CompanyName</h4>
-      {stocks.map((stock) => (
+      {stocksArray.map((stock) => (
         <Stock
-          key={stock.companyName}
+          key={stock.symbol}
           companyName={stock.companyName}
         />
       ))}
