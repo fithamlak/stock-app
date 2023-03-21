@@ -5,7 +5,7 @@ import Stocks from './routes/Stocks';
 import Show from './routes/Show';
 import About from './routes/About';
 import NoMatch from './routes/NoMatch';
-import Stock from './routes/Stock';
+import StockPage from './routes/Stock';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Stocks />} />
         <Route path="stocks" element={<Stocks />} />
-        <Route path="stock" element={<Stock />}>
+        <Route path="stock" element={<StockPage />}>
           <Route path=":slug" element={<Show />} />
         </Route>
         <Route path="about" element={<About />} />
