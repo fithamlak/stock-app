@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { BsPatchQuestionFill, BsFillHouseDoorFill } from 'react-icons/bs';
+import '../styles/navbar.scss';
 
 const Navbar = () => (
   <nav>
