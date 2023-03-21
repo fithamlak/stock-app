@@ -1,10 +1,12 @@
 import { NavLink } from 'react-router-dom';
+import { BsPatchQuestionFill, BsFillHouseDoorFill } from 'react-icons/bs';
 
 const Navbar = () => (
   <nav>
     <ul>
-      <li><NavLink to="/">Home</NavLink></li>
-      <li><NavLink to="about">About</NavLink></li>
+      <li><NavLink to="/"><BsFillHouseDoorFill /></NavLink></li>
+      <li><NavLink to="/">Market Cap</NavLink></li>
+      <li><NavLink to="/"><BsPatchQuestionFill /></NavLink></li>
     </ul>
   </nav>
 );
