@@ -1,13 +1,14 @@
-import StocksContainer from '../components/StocksContainer';
+import { useParams, Outlet } from 'react-router-dom';
 
-const Stocks = () => {
-  const title = 'Stocks';
+const Stock = () => {
+  const { slug } = useParams();
+
   return (
     <>
-      <h1>{title}</h1>
-      <StocksContainer />
+      <h1>{slug}</h1>
+      <Outlet />
     </>
   );
 };
 
-export default Stocks;
+export default Stock;

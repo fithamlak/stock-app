@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { fetchStocks } from '../redux/stocks/stocksSlice';
-import Stock from './Stock';
 
 const StocksContainer = () => {
   const dispatch = useDispatch();
@@ -17,12 +17,13 @@ const StocksContainer = () => {
   return (
     <>
       <h4>List of CompanyName</h4>
-      {stocksArray.map((stock) => (
-        <Stock
-          key={stock.symbol}
-          companyName={stock.companyName}
-        />
-      ))}
+      <ul>
+        {stocksArray.map((stock) => (
+          <li key={stock.symbol}>
+            <NavLink to={`stock/${stock.symbol}`}>{stock.companyName}</NavLink>
+          </li>
+        ))}
+      </ul>
     </>
   );
 };
