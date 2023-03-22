@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import '../styles/stock.scss';
 
 const Stock = (props) => {
   const {
