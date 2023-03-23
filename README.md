@@ -71,7 +71,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - coming soon ....
-- coming soon ....
+- [Watch](https://www.loom.com/share/7a8ade753ca644c59e1e6ee241187278)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
