@@ -70,8 +70,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- coming soon after aprroved ....
-- coming soon after approved ....
+- [Visit](https://stock-app-anup.onrender.com)
+- [Watch](https://www.loom.com/share/7a8ade753ca644c59e1e6ee241187278)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
