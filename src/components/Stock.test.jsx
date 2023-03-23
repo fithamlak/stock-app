@@ -10,7 +10,7 @@ const SampleStock = {
   sector: 'Technology',
   beta: 1.2094,
   price: 188.68,
-  Exchange: 'NYSE',
+  exchangeShortName: 'NYSE',
   volume: 4379287,
   lastAnnualDividend: 0,
 };
@@ -26,7 +26,7 @@ describe('test suite for Stock component', () => {
           marketCap={SampleStock.marketCap}
           beta={SampleStock.beta}
           price={SampleStock.price}
-          Exchange={SampleStock.Exchange}
+          exchangeShortName={SampleStock.exchangeShortName}
           volume={SampleStock.volume}
           lastAnnualDividend={SampleStock.lastAnnualDividend}
         />

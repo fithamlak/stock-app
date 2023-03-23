@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import StocksContainer from '../../components/StocksContainer';
+import StocksContainer from '../../components/Stock.test';
 import store from '../store';
 
 const mockStore = configureStore([]);
