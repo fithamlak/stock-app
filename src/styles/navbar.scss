@@ -1,23 +1,29 @@
 nav {
-    background: #ae40ae;
-    color: white;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    height: 5rem;
-    padding: 0 0.5rem;
+  background: #ae40ae;
+  color: white;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 5rem;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+
+  svg {
     font-size: 1.8rem;
-    text-transform: uppercase;
-    position: fixed;
-    width: 100%;
-  
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: space-between;
-      a {
-        color: white;
-      }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: white;
     }
   }
+}
