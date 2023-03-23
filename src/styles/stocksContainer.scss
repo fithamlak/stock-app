@@ -20,12 +20,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .text {
       font-size: 1.8rem;
     }
   }
 }
-  
+
 
 .header {
   text-transform: uppercase;
@@ -38,20 +39,20 @@
 .stocks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
-    .stock {
-      height: 10rem;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      line-height: 1.6rem;
-      background: #b345a4;
-  
-      a {
-        color: white;
-      }
-    
-  
+
+  .stock {
+    height: 10rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6rem;
+    background: #b345a4;
+
+    a {
+      color: white;
+    }
+
+
     .topHalf {
       box-sizing: border-box;
       height: 5rem;
@@ -71,6 +72,7 @@
         text-align: right;
         padding: 0.5rem;
         color: white;
+
         :first-child {
           border: 1px solid white;
           border-radius: 50%;
@@ -78,6 +80,7 @@
         }
       }
     }
+
     .bottomHalf {
       box-sizing: border-box;
       height: 5rem;
@@ -89,9 +92,9 @@
       text-align: right;
       padding: 0.5rem;
     }
-    }
-  
-    .stock:nth-child(4n + 2),
+  }
+
+  .stock:nth-child(4n + 2),
   .stock:nth-child(4n + 3):not(:first-child) {
     background-color: #a33e95;
   }
